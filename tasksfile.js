@@ -50,9 +50,9 @@ function buildProverServer() {
         " ../depends/ffiasm/c/splitparstr.cpp"+
         " ../depends/ffiasm/c/alt_bn128.cpp"+
         " fq.cpp"+
-        " fq.o"+
+        // " fq.o"+
         " fr.cpp"+
-        " fr.o"+
+        // " fr.o"+
         " -L../depends/pistache/build/src -lpistache"+
         " -o proverServer"+
         " -fmax-errors=5 -pthread -std=c++17 -fopenmp -lgmp -lsodium -g -DSANITY_CHECK", {cwd: "build", nopipe: true}
